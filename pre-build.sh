@@ -523,7 +523,7 @@ fi
 
 if [ "$CONFIG_FIRMWARE_INCLUDE_WIREGUARD" = "y" ] ; then
 	func_enable_kernel_param_as_m "CONFIG_WIREGUARD"
-	func_disable_kernel_param "CONFIG_WIREGUARD_DEBUG"
+	func_enable_kernel_param "CONFIG_WIREGUARD"
 fi
 
 if [ "$CONFIG_FIRMWARE_INCLUDE_SHORTCUT_FE" = "y" ] ; then
